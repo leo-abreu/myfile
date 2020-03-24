@@ -1,7 +1,7 @@
 class myfile {
   $msg_body = "default content for myfile\n"
   file {'/root/myfile':
-    ensure => present,
+    ensure  => present,
     content => $msg_body,
   }
 }
